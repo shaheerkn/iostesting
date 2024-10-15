@@ -9,21 +9,5 @@
 <body>
   <section></section>
   <section></section>
-
-  <script>
-    let screenWidth = window.innerWidth;
-    let timeout;
-
-    window.addEventListener('resize', ()=> {
-      clearTimeout(timeout);
-
-      timeout = setTimeout(() => {
-        if (window.innerWidth !== screenWidth) {
-          screenWidth = window.innerWidth
-          alert('The window has been resized')
-        }
-      }, 200);
-    })
-  </script>
 </body>
 </html>
